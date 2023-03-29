@@ -19,7 +19,7 @@ knitr::opts_chunk$set(cache = TRUE)
 
 The Political Microtargeting Project is an interdisciplinary research effort focused on exploring the impact of political microtargeting on democratic processes and legitimacy. 
 
-Led by an experienced team of researchers from the Amsterdam School of Communication Research (ASCoR), and the Institute for Information Law (IViR), the project aims to make microtargeting practices visible, study their impact on citizens and society, and develop policy guidelines to limit their threats and embrace their opportunities. 
+Led by an experienced team of researchers from the Amsterdam School of Communication Research (ASCoR), the Institute for Information Law (IVIR), Amsterdam School for Cultural Analysis (ASCA), the project aims to make microtargeting practices visible, study their impact on citizens and society, and develop policy guidelines to analyze and limit their threats. 
 
 The project involves close collaboration with government agencies, non-academic partners, and other stakeholders to ensure that the research findings have a meaningful impact on society.
 <!-- </details> -->
