@@ -26,7 +26,12 @@ The project involves close collaboration with government agencies, non-academic 
 
 # Papers: 
 
+[Dobber, T., Kruikemeier, S., Helberger, N., & Goodman, E. (2023). **Shielding citizens? Understanding the impact of political advertisement transparency information.** *New Media & Society*, 0(0). https://doi.org/10.1177/14614448231157640](https://journals.sagepub.com/doi/pdf/10.1177/14614448231157640)
+
 [Votta, F., Noroozian, A., Dobber, T., Helberger, N., & de Vreese, C. (2023). **Going Micro to Go Negative? Targeting Toxicity using Facebook and Instagram Ads.** *Computational Communication Research*, 5(1), 1-50.](https://www.aup-online.com/content/journals/10.5117/CCR2023.1.001.VOTT)
+
+[van Drunen, M. Z., Groen-Reijman, E., Dobber, T., Noroozian, A., Leerssen, P. J., Helberger, N., de Vreese, C. H., & Votta, F. A. (2022). **Transparency and (no) more in the Political Advertising Regulation.** *Internet Policy Review*.]( https://policyreview.info/articles/news/transparency-and-no-more-political-advertising-regulation/1616)
+
 
 # Media Appearances / References
 
@@ -36,7 +41,7 @@ A list of media appearances and references in TV, radio and newspapers.
 
 # Dashboards
 
-Here is a list of dashboards that were created to monitor microtargeting and digital campaigns during election time.
+Here is a list of dashboards that were created to monitor microtargeting and digital campaigns during election time:
 
 + `r emo::ji("netherlands")` [2021 Dutch general election](https://favstats.github.io/DutchElectionObservatory/nl/index.html) (15th-17th March 2021)
 + `r emo::ji("germany")` [2021 German general election](https://favstats.shinyapps.io/btw21_wtm/) (26th September 2021)
@@ -48,6 +53,14 @@ Here is a list of dashboards that were created to monitor microtargeting and dig
 + `r emo::ji("netherlands")` [2023 Dutch provincial elections](https://favstats.github.io/ProvincialeStatenverkiezingen2023/) (15th March 2023)
 + 🇲🇪 [2023 Montenegrin presidential elections](https://favstats.github.io/MontenegroPresidentialElection2023/) (19th March 2023)
 + 🇦🇺 [2023 New South Wales state election](https://favstats.github.io/NSWAustralianElection2023/) (25th March 2023)
+
+# Further Reading
+
++ [Towards unfair political practices law: Learning lessons from the regulation of unfair commercial practices for online political advertising.](https://www.jipitec.eu/issues/jipitec-12-3-2021/5338)
+
++ [Ad Delivery Algorithms: The Hidden Arbiters of Political Messaging](https://dl.acm.org/doi/10.1145/3437963.3441801)
+
++ [Political advertising exposed: tracking Facebook ads in the 2021 Dutch elections](https://policyreview.info/articles/news/political-advertising-exposed-tracking-facebook-ads-2021-dutch-elections/1543)
 
 # Team
 
@@ -95,6 +108,7 @@ div(class = "row",
 
 ```
 
+<center>
 
 ```{r, echo = F}
 cards <- function(title, text, link, image) {
@@ -106,25 +120,17 @@ cards <- function(title, text, link, image) {
           #a(href = link, class = "btn btn-primary", "Learn more")))
 }
 div(class = "row",
-    div(class = "col-sm-6 col-md-4",
+    div(class = "col-sm-6",
         cards(
-          "Prof. dr. N. Helberger",
+          "Dr. E. Groen-Reijman",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
           "#",
-          "https://verfassungsblog.de/wp-content/uploads/2022/08/Natali-Helberger-Global-Digital-Cultures-UvA.jpg"
+          "https://via.placeholder.com/150x200"
         )
     ),
-    div(class = "col-sm-6 col-md-4",
+    div(class = "col-sm-6",
         cards(
-          "PhD candidate F. Votta",
-          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-          "#",
-          "https://www.uva.nl/binaries/_ht_1677599571673/cardmedium/content/gallery/personen/v/o/fabio-votta.jpg"
-        )
-    ),
-    div(class = "col-sm-6 col-md-4",
-        cards(
-          "Postdoc M. van Drunen",
+          "Dr. M. van Drunen",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
           "#",
           "https://www.uva.nl/binaries/content/documents/personalpages/d/r/m.z.vandrunen/m.z.van-drunen/m.z.van-drunen/uva%3Aprofileimagecompound"
@@ -135,10 +141,37 @@ div(class = "row",
 ```
 
 
-# Further Reading
+```{r, echo = F}
+cards <- function(title, text, link, image) {
+  div(class = "card",
+      div(class = "card-body pb-5",
+          h6(class = "card-title mb-0", title)),
+      img(class = "card-img-top", src = image, style="object-fit: cover; height: 200px; width: 100%;"))
+          #p(class = "card-text", text),
+          #a(href = link, class = "btn btn-primary", "Learn more")))
+}
+div(class = "row",
+    div(class = "col-sm-6",
+        cards(
+          "Dr. A. Noroozian",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+          "#",
+          "https://via.placeholder.com/150x200"
+        )
+    ),
+    div(class = "col-sm-6",
+        cards(
+          "PhD candidate F. Votta",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+          "#",
+          "https://www.uva.nl/binaries/_ht_1677599571673/cardmedium/content/gallery/personen/v/o/fabio-votta.jpg"
+        )
+    )
+)
 
-[Towards unfair political practices law: Learning lessons from the regulation of unfair commercial practices for online political advertising.](https://www.jipitec.eu/issues/jipitec-12-3-2021/5338)
+```
 
+</center>
 
 
 <script>
