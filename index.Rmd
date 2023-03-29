@@ -120,7 +120,15 @@ cards <- function(title, text, link, image) {
           #a(href = link, class = "btn btn-primary", "Learn more")))
 }
 div(class = "row",
-    div(class = "col-sm-6",
+    div(class = "col-sm-6 col-md-4",
+        cards(
+          "Prof. dr T. Dobber",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+          "#",
+          "img/al9Fu_kP_400x400.jpg"
+        )
+    ),
+    div(class = "col-sm-6 col-md-4",
         cards(
           "Dr. E. Groen-Reijman",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
@@ -128,7 +136,7 @@ div(class = "row",
           "https://via.placeholder.com/150x200"
         )
     ),
-    div(class = "col-sm-6",
+    div(class = "col-sm-6 col-md-4",
         cards(
           "Dr. M. van Drunen",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
@@ -156,7 +164,7 @@ div(class = "row",
           "Dr. A. Noroozian",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
           "#",
-          "https://via.placeholder.com/150x200"
+          "img/Gt_88BkU_400x400.jpg"
         )
     ),
     div(class = "col-sm-6",
