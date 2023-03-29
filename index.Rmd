@@ -59,11 +59,11 @@ library(bs4cards)
 
 cards <- function(title, text, link, image) {
   div(class = "card",
-      img(class = "card-img-top", src = image, style="object-fit: cover; height: 200px; width: 100%;"),
-      div(class = "card-body",
-          h6(class = "card-title", title),
-          p(class = "card-text", text),
-          a(href = link, class = "btn btn-primary", "Learn more")))
+      div(class = "card-body pb-5",
+          h6(class = "card-title mb-0", title)),
+      img(class = "card-img-top", src = image, style="object-fit: cover; height: 200px; width: 100%;"))
+          #p(class = "card-text", text),
+          #a(href = link, class = "btn btn-primary", "Learn more")))
 }
 
 div(class = "row",
@@ -80,7 +80,7 @@ div(class = "row",
           "Prof. dr. C. de Vreese",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
           "#",
-          "https://www.uva.nl/binaries/_ht_1677599571673/cardmedium/content/gallery/personen/v/o/fabio-votta.jpg"
+          "https://github.com/favstats/PMT-Project/blob/main/img/claes-de-vreese.jpg?raw=true"
         )
     ),
     div(class = "col-sm-6 col-md-4",
@@ -88,15 +88,23 @@ div(class = "row",
           "Prof. dr. B. Roessler",
           "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
           "#",
-          "https://www.uva.nl/binaries/content/documents/personalpages/d/r/m.z.vandrunen/m.z.van-drunen/m.z.van-drunen/uva%3Aprofileimagecompound"
+          "https://github.com/favstats/PMT-Project/blob/main/img/mw-prof-dr-beate-roessler-fgw.jpg?raw=true"
         )
     )
 )
 
 ```
 
-```{r, echo = F}
 
+```{r, echo = F}
+cards <- function(title, text, link, image) {
+  div(class = "card",
+      div(class = "card-body pb-5",
+          h6(class = "card-title mb-0", title)),
+      img(class = "card-img-top", src = image, style="object-fit: cover; height: 200px; width: 100%;"))
+          #p(class = "card-text", text),
+          #a(href = link, class = "btn btn-primary", "Learn more")))
+}
 div(class = "row",
     div(class = "col-sm-6 col-md-4",
         cards(
@@ -134,31 +142,11 @@ div(class = "row",
 
 
 <script>
-.ui.card {
-  margin-bottom: 1em;
-}
 
-.ui.card .image img {
-  height: 75px;
-  width: 75px;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-.ui.card .content {
-  text-align: center;
+.card-body {
+  padding-bottom: -4rem;
 }
-
-.ui.card .header {
-  margin-top: 1em;
-  font-size: 1.2em;
-}
-
-.ui.card .description {
-  margin-top: 1em;
-  font-size: 1em;
-}
-
 
 </script>
 
